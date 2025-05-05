@@ -38,6 +38,9 @@ jobs:
         working-directory: backend
         run: npm install
 
-      - name: Test backend 
+      - name: Test backend
         working-directory: backend
+        env:
+          MONGO_URI: mongodb://localhost:27017/product-app
         run: npm test
+
