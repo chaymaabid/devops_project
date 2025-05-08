@@ -42,5 +42,5 @@ jobs:
         working-directory: backend
         env:
           MONGO_URI: mongodb://localhost:27017/product-app
+          #MONGO_URI: ${{ secrets.MONGO_URI_PROD }}
         run: npm test
-
